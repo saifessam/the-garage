@@ -1,0 +1,40 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex: 1 1;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.5rem;
+  overflow: auto;
+}
+
+.wrapper.wrapper-vertical {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.wrapper.wrapper-start {
+  justify-content: flex-start;
+}
+
+.wrapper.wrapper-separated {
+  justify-content: space-between;
+}
+
+.wrapper.wrapper-centered {
+  align-items: center;
+}
+
+.wrapper.wrapper-bottom {
+  align-items: flex-end;
+}
+
+.wrapper .wrapper-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}

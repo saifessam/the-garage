@@ -1,0 +1,106 @@
+[
+  {
+    "value": "cairo",
+    "label": "Cairo"
+  },
+  {
+    "value": "giza",
+    "label": "Giza"
+  },
+  {
+    "value": "alexandria",
+    "label": "Alexandria"
+  },
+  {
+    "value": "north-coast",
+    "label": "North Coast"
+  },
+  {
+    "value": "qalyubia",
+    "label": "Qalyubia"
+  },
+  {
+    "value": "gharbia",
+    "label": "Gharbia"
+  },
+  {
+    "value": "menoufia",
+    "label": "Menoufia"
+  },
+  {
+    "value": "fayoum",
+    "label": "Fayoum"
+  },
+  {
+    "value": "el-dakahlia",
+    "label": "El-Dakahlia"
+  },
+  {
+    "value": "el-sharqia",
+    "label": "El-Sharqia"
+  },
+  {
+    "value": "el-beheira",
+    "label": "El-Beheira"
+  },
+  {
+    "value": "damietta",
+    "label": "Damietta"
+  },
+  {
+    "value": "matrouh",
+    "label": "Matrouh"
+  },
+  {
+    "value": "assiut",
+    "label": "Assiut"
+  },
+  {
+    "value": "el-ismailia",
+    "label": "El-Ismailia"
+  },
+  {
+    "value": "hurghada",
+    "label": "Hurghada"
+  },
+  {
+    "value": "sharm-el-sheikh",
+    "label": "Sharm El-Sheikh"
+  },
+  {
+    "value": "portsaid",
+    "label": "Portsaid"
+  },
+  {
+    "value": "suez",
+    "label": "Suez"
+  },
+  {
+    "value": "sohag",
+    "label": "Sohag"
+  },
+  {
+    "value": "el-minia",
+    "label": "El-Minia"
+  },
+  {
+    "value": "kafr-el-sheikh",
+    "label": "Kafr El-Sheikh"
+  },
+  {
+    "value": "luxor",
+    "label": "Luxor"
+  },
+  {
+    "value": "qena",
+    "label": "Qena"
+  },
+  {
+    "value": "aswan",
+    "label": "Aswan"
+  },
+  {
+    "value": "beni-suef",
+    "label": "Beni Suef"
+  }
+]

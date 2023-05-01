@@ -1,0 +1,14 @@
+[
+  {
+    "value": "new",
+    "label": "New"
+  },
+  {
+    "value": "used",
+    "label": "Used"
+  },
+  {
+    "value": "rentable",
+    "label": "Rentable"
+  }
+]

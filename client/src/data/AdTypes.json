@@ -1,0 +1,10 @@
+[
+  {
+    "value": "vehicle",
+    "label": "Vehicle"
+  },
+  {
+    "value": "spare",
+    "label": "Spare Part"
+  }
+]

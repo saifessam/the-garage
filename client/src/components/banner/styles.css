@@ -1,0 +1,111 @@
+.banner {
+  position: relative;
+  width: auto;
+  height: 60vh;
+  display: flex;
+  flex: 1 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: center no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(0.25rem);
+  z-index: 0;
+}
+
+.banner > * {
+  z-index: 1;
+}
+
+.banner .banner-details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.banner .banner-details > h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.banner .banner-details .banner-details-sections {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .banner-details .banner-details-sections .banner-details-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.banner .banner-details .banner-details-sections .banner-details-section:not(:last-child) {
+  border-right: 1px solid var(--white);
+}
+
+.banner .banner-details .banner-details-sections .banner-details-section span,
+.banner .banner-details .banner-details-sections .banner-details-section a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--white);
+}
+
+.banner .banner-details .banner-details-sections .banner-details-section span svg,
+.banner .banner-details .banner-details-sections .banner-details-section a svg {
+  width: 24px;
+  height: 24px;
+}
+
+.banner .banner-details .banner-details-sections .banner-details-section span svg path,
+.banner .banner-details .banner-details-sections .banner-details-section a svg path {
+  fill: var(--white);
+}
+
+.banner .banner-details .banner-details-sections .banner-details-section span[data-color='green'] {
+  font-weight: 600;
+  color: var(--green);
+}
+
+.banner .banner-details .banner-details-sections .banner-details-section span[data-color='orange'] {
+  font-weight: 600;
+  color: var(--orange);
+}
+
+.banner .banner-details .banner-details-sections .banner-details-section span[data-color='red'] {
+  font-weight: 600;
+  color: var(--red);
+}
+
+.banner .banner-details > button {
+  width: 50%;
+}

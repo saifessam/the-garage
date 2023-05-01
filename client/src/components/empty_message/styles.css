@@ -1,0 +1,24 @@
+.empty-message {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.empty-message svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.empty-message svg path {
+  fill: var(--dark-grey);
+}
+
+.empty-message span {
+  color: var(--dark-grey);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}

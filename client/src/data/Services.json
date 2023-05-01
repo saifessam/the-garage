@@ -1,0 +1,30 @@
+[
+  {
+    "key": "1",
+    "path": "service-providers/all",
+    "image": "service-providers",
+    "title": "SERVICES PROVIDERS",
+    "text": "Over fifty repairing centers and car showrooms distributed all over Egypt, find what suits you the most and we will help you contacting, dealing and reserving with them."
+  },
+  {
+    "key": "2",
+    "path": "cars/all",
+    "image": "car-deal",
+    "title": "NEW & USED CARS",
+    "text": "Explore various of cars that's on sale all over Egypt , pick the car that you like and we will help you afford it."
+  },
+  {
+    "key": "3",
+    "path": "cars-rental/all",
+    "image": "car-rental",
+    "title": "CARS RENTAL",
+    "text": "It's not necessary owning a car, as long as you reach your destinations it's fine, and here we are to help you to find the car that suits you and your trips with the best prices possible."
+  },
+  {
+    "key": "4",
+    "path": "spare-parts/all",
+    "image": "spare-parts",
+    "title": "SPARE PARTS",
+    "text": "Stop wasting your time searching for your car's spare parts, here we provided you with the most afordalbe spare parts as well as good qualities."
+  }
+]

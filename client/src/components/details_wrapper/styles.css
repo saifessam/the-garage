@@ -1,0 +1,21 @@
+.details-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  text-transform: capitalize;
+}
+
+.details-wrapper.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.details-wrapper.caps {
+  text-transform: uppercase;
+}
+
+.details-wrapper.small {
+  text-transform: lowercase;
+}

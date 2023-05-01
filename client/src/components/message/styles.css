@@ -1,0 +1,24 @@
+.message {
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.message[data-info='error'] {
+  color: var(--white);
+  background-color: var(--red);
+}
+
+.message[data-info='success'] {
+  color: var(--black);
+  background-color: var(--green);
+}

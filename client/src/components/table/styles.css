@@ -1,0 +1,48 @@
+table {
+  max-width: 100%;
+  height: 100%;
+  border: var(--table-border);
+  border-collapse: collapse;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+table thead th {
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border: var(--table-border);
+}
+
+table tbody td {
+  padding: 0.25rem 0.5rem;
+  border: var(--table-border);
+  text-transform: capitalize;
+}
+
+.wrapped {
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+table tr td .table-action-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+table tr td .table-data-green {
+  color: var(--green);
+  font-weight: 600;
+}
+
+table tr td .table-data-red {
+  color: var(--red);
+  font-weight: 600;
+}
+
+table tfoot td {
+  padding: 0.25rem 0.5rem;
+  border: var(--table-border);
+}

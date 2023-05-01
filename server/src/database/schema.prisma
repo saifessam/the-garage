@@ -1,0 +1,153 @@
+// DATABASE CONFIGERATIONS
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Tables
+model Users {
+  id        String    @id @default(cuid())
+  name      String
+  email     String    @unique
+  password  String
+  image     String    @default("user_default.jpg")
+  phone     String
+  location  String
+  isAdmin   Boolean   @default(false)
+  reviews   Reviews[]
+  spares    Cart[]
+  orders    Order[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@map(name: "users")
+}
+
+model ServiceProviders {
+  id          String              @id @default(cuid())
+  name        String
+  email       String              @unique
+  images      Json?
+  password    String
+  type        ServiceProviderType
+  workTime    Json
+  offDays     Json?
+  description String              @db.LongText
+  approved    Boolean             @default(false)
+  branches    Json?
+  reviews     Reviews[]
+  spares      Cart[]
+  orders      Order[]
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+
+  @@map(name: "service_providers")
+}
+
+model Ads {
+  id           String        @id @default(cuid())
+  title        String
+  images       Json?
+  price        Float
+  avilability  Boolean       @default(true)
+  description  String        @db.LongText
+  approved     Boolean       @default(false)
+  adType       AdType
+  make         String?
+  model        String?
+  year         Int?
+  color        String?
+  transmission Transmission?
+  condition    Condition?
+  carType      CarType?
+  features     Json?
+  location     String?
+  ownerId      String
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  @@map(name: "ads")
+}
+
+model Reviews {
+  id                String           @id @default(cuid())
+  title             String
+  message           String           @db.LongText
+  rate              Int
+  user              Users            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId            String
+  serviceProvider   ServiceProviders @relation(fields: [serviceProviderId], references: [id], onDelete: Cascade)
+  serviceProviderId String
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+
+  @@map(name: "reviews")
+}
+
+model Cart {
+  id                String            @id @default(cuid())
+  itemId            String
+  image             String
+  title             String
+  quantity          Int
+  price             Int
+  user              Users?            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId            String?
+  serviceProvider   ServiceProviders? @relation(fields: [serviceProviderId], references: [id], onDelete: Cascade)
+  serviceProviderId String?
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+
+  @@map(name: "cart")
+}
+
+model Order {
+  id                String            @id @default(cuid())
+  itemId            String
+  image             String
+  title             String
+  quantity          Int
+  price             Int
+  status            String            @default("waiting")
+  user              Users?            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId            String?
+  serviceProvider   ServiceProviders? @relation(fields: [serviceProviderId], references: [id], onDelete: Cascade)
+  serviceProviderId String?
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+
+  @@map(name: "orders")
+}
+
+// ENUMS
+enum ServiceProviderType {
+  showroom
+  center
+}
+
+enum Transmission {
+  manual
+  automatic
+}
+
+enum Condition {
+  new
+  used
+  rentable
+}
+
+enum CarType {
+  sedan
+  suv
+  hatchback
+  other
+}
+
+enum AdType {
+  vehicle
+  spare
+}

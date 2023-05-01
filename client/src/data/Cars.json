@@ -1,0 +1,78 @@
+[
+  {
+    "brand": "BMW",
+    "model": ["320i", "318i", "e21", "e36", "x3", "x4", "x5", "x6"]
+  },
+  {
+    "brand": "Audi",
+    "model": ["a3", "a4", "a5", "q2", "q3", "rs", "rsq8", "a8"]
+  },
+  {
+    "brand": "Mercedes",
+    "model": ["w124", "w126", "w210", "w211", "w212", "c200", "cla", "a200"]
+  },
+  {
+    "brand": "Skoda",
+    "model": ["octavia", "a4", "a5", "fantasia", "kodiaq", "scala", "fabia", "superb"]
+  },
+  {
+    "brand": "Volkswagen",
+    "model": ["passat", "bora", "jetta", "golf", "polo", "tiguan", "pointer", "souran"]
+  },
+  {
+    "brand": "Jeep",
+    "model": ["kk", "grand", "cherokee", "renegade", "liberty", "limited", "wrangler", "compass"]
+  },
+  {
+    "brand": "Ford",
+    "model": ["bronco", "edge", "focus", "fiesta", "fusion", "f150", "ecosport", "endeavour"]
+  },
+  {
+    "brand": "Ferrari",
+    "model": ["roma", "f8", "f40", "portofina", "testarossa", "sf90", "488", "296 gtb"]
+  },
+  {
+    "brand": "Jaguar",
+    "model": ["xe", "xf", "xfr", "xj", "xj6", "xjr", "xk", "xk8"]
+  },
+  {
+    "brand": "Hyndai",
+    "model": ["elantra", "accent", "i30", "bayon", "verna", "tucson", "creta", "ix35"]
+  },
+  {
+    "brand": "Kia",
+    "model": ["sportage", "picanto", "cerato", "rio", "sorento", "xceed", "carens", "k4"]
+  },
+  {
+    "brand": "Renault",
+    "model": ["megane", "logan", "sandero", "duster", "kadjar", "stepway", "fluence", "captur"]
+  },
+  {
+    "brand": "Toyota",
+    "model": ["corolla", "yaris", "fortuner", "rav4", "camry", "supra", "land cruiser", "frankfort"]
+  },
+  {
+    "brand": "Honda",
+    "model": ["civic", "accord", "cr v", "type r", "hr v", "jazz", "city", ""]
+  },
+  {
+    "brand": "Citroen",
+    "model": ["ax", "c3", "c4", "c5", "ds3", "ds4", "ds5", "zx"]
+  },
+  {
+    "brand": "MG",
+    "model": ["5", "6", "zst", "rx5", "hs", "750", "3", "c 350"]
+  },
+  {
+    "brand": "Chevorlet",
+    "model": ["aveo", "lanos", "cruze", "malibu", "optra", "spark", "camaro", "captiva"]
+  },
+  {
+    "brand": "BYD",
+    "model": ["f0", "f3", "flyer", "l3", "s5"]
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": ["lancer", "mirage", "Xpander", "galant", "pajero", "colt", "eclipse cross", "outlander"]
+  }
+]

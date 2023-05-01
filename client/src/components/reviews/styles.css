@@ -1,0 +1,72 @@
+.reviews {
+  position: relative;
+  width: auto;
+  height: 60vh;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  overflow: hidden;
+  overflow-y: auto;
+  box-shadow: 0 0 0.5rem var(--shadow);
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.reviews::-webkit-scrollbar {
+  display: none;
+}
+
+.reviews .reviews-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.reviews .reviews-title h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.reviews .reviews-title span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.reviews .reviews-title span svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.reviews .reviews-title span svg path {
+  fill: var(--orange);
+}
+
+form {
+  max-width: 40vw;
+  height: 70vh;
+  padding: 1rem;
+  margin: 0;
+  box-shadow: 0 0 0.5rem var(--shadow);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+form::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,28 @@
+.navigator {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  background-color: var(--black);
+  box-shadow: var(--box-shadow-bottom);
+  z-index: 100;
+}
+
+.navigator .navigator-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navigator .navigator-buttons button.activePage {
+  font-weight: 600;
+  color: var(--black) !important;
+  background-color: var(--white) !important;
+}

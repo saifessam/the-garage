@@ -1,0 +1,10 @@
+[
+  {
+    "value": "manual",
+    "label": "Manual"
+  },
+  {
+    "value": "automatic",
+    "label": "Automatic"
+  }
+]

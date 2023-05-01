@@ -1,0 +1,34 @@
+[
+  {
+    "value": "abs",
+    "label": "ABS"
+  },
+  {
+    "value": "radio",
+    "label": "AM/FM Radio"
+  },
+  {
+    "value": "ac",
+    "label": "Air Conditioning"
+  },
+  {
+    "value": "airbags",
+    "label": "Airbags"
+  },
+  {
+    "value": "security",
+    "label": "Anti-Theft System"
+  },
+  {
+    "value": "aux",
+    "label": "AUX Support"
+  },
+  {
+    "value": "bt",
+    "label": "Bluetooth System"
+  },
+  {
+    "value": "ebd",
+    "label": "EBD"
+  }
+]

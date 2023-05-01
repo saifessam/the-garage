@@ -1,0 +1,71 @@
+.receipt {
+  position: sticky;
+  top: 2rem;
+  width: 30vw;
+  height: calc(100vh - 12rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.receipt .receipt-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.receipt .receipt-header h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.receipt .receipt-details {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+.receipt .receipt-details table {
+  width: 100%;
+  height: 100%;
+  border: var(--table-border);
+  border-collapse: collapse;
+}
+
+.receipt .receipt-details table thead th {
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border: var(--table-border);
+}
+
+.receipt .receipt-details table tbody td {
+  padding: 0.25rem 0.5rem;
+  border: var(--table-border);
+}
+
+.receipt .receipt-details table tfoot td {
+  padding: 0.25rem 0.5rem;
+  border: var(--table-border);
+}
+
+.receipt .receipt-actions {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
